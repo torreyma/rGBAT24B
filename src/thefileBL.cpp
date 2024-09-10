@@ -21,7 +21,7 @@ using namespace Rcpp;
 
 DataFrame GBAT_BL(DataFrame x, std::string id_col, std::string bbl_col) {
 
-  setenv("GEOFILES", "/home/health.dohmh.nycnet/mtorrey/DOHMH-local/version-24b_24.2/fls/", 1); // Overwrite it
+  setenv("GEOFILES", "/home/dynohub/DOHMH-local/version-24b_24.2/fls/", 1); // Overwrite it
 
   CharacterVector id_vec = x[id_col];
   

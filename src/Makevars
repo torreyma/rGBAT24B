@@ -1,5 +1,5 @@
 ###binary locations###
-PKG_LIBS = -Wl,-rpath,"/home/health.dohmh.nycnet/mtorrey/DOHMH-local/version-24b_24.2/lib" -L"/home/health.dohmh.nycnet/mtorrey/DOHMH-local/version-24b_24.2/lib" -lgeo
+PKG_LIBS = -Wl,-rpath,"/home/dynohub/DOHMH-local/version-24b_24.2/lib" -L"/home/dynohub/DOHMH-local/version-24b_24.2/lib" -lgeo -Wl,--disable-new-dtags
 ###header locations####
-PKG_CPPFLAGS=-I"/home/health.dohmh.nycnet/mtorrey/DOHMH-local/version-24b_24.2/include/foruser" -I"/home/health.dohmh.nycnet/mtorrey/tmp/rGBAT-temp/rGBAT24B/src"
+PKG_CPPFLAGS=-I"/home/dynohub/DOHMH-local/version-24b_24.2/include/foruser" -I"/home/dynohub/tmp/rGBAT-temp/rGBAT24B/src"
 

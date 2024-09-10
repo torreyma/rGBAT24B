@@ -15,6 +15,6 @@ Imports:
 LinkingTo: Rcpp
 License: MIT
 LazyData: TRUE
-RoxygenNote: 7.3.1
+RoxygenNote: 7.2.3
 SystemRequirements: GNU make
 Encoding: UTF-8
