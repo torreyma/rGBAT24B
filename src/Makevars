@@ -1,5 +1,4 @@
 ###binary locations###
-PKG_LIBS = -Wl,-rpath,"/home/dynohub/DOHMH-local/version-24b_24.2/lib" -L"/home/dynohub/DOHMH-local/version-24b_24.2/lib" -lgeo -Wl,--disable-new-dtags
+PKG_LIBS = -Wl,-rpath,"$(HOME)/DOHMH-local/version-24b_24.2/lib" -L"$(HOME)/DOHMH-local/version-24b_24.2/lib" -lgeo -Wl,--disable-new-dtags
 ###header locations####
-PKG_CPPFLAGS=-I"/home/dynohub/DOHMH-local/version-24b_24.2/include/foruser" -I"/home/dynohub/tmp/rGBAT-temp/rGBAT24B/src"
-
+PKG_CPPFLAGS=-I"$(HOME)/DOHMH-local/version-24b_24.2/include/foruser" -I"$(HOME)/git-local-repos/torreyma/rGBAT24B/src"
