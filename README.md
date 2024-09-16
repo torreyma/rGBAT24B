@@ -14,13 +14,14 @@ This package provides access to the 24B geosupport libraries. You need the rGBAT
 * If it installs with no errors, you then need to install the torreyma/rGBATl package.
 
 ## Install, the harder way:
-* If you want to put your Geosupport files anywhere other than your home directory, you need to clone this repo locally, then edit the src/Makevars file to adjust the path to point to where your Geosupport files are stashed.
+* If you want to put your Geosupport files anywhere other than your home directory, you need to clone this repo locally, then edit the src/Makevars file to adjust the path to point to where your Geosupport files are stashed. Then install locally from your cloned and modified version of the package.
 
 ## Troubleshooting
-* If you get any error about missing .so or .h files, you probably have a path problem, and it is most likely fixed by messing with the srx/Makevars file. (That's not to say it will be easy.)
-* On an older version of Linux (eg, RHEL, ie, an older version of gcc/ld) try removing the ```-Wl,--disable-new-dtags``` flag from the PKG_LIBS line in src/Makevars. This is related to how the RPATH and RUNPATH variables work in older version of ld vs newer ones.
+* If you get any error about missing .so or .h files, you probably have a path problem, and it is most likely fixed by messing with the src/Makevars file. (That's not to say it will be easy.)
+* On an older version of Linux (eg, RHEL, ie, an older version of gcc/ld) try removing the ```-Wl,--disable-new-dtags``` flag from the PKG_LIBS line in src/Makevars. This is related to how the RPATH and RUNPATH variables work in older version of ld vs newer ones. (However, I have tested this flag on RHEL and it works.)
 
 ## License
+* The original package, rGBAT, was written by Gretchen Culp (https://github.com/gmculp).
 * This package is released under an MIT license (see LICENSE file).
 * Geosupport Desktop Edition™ copyrighted by the New York City Department of City Planning. This product is freely available to the public with no limitations. 
 
