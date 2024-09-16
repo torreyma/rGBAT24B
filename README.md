@@ -1,16 +1,17 @@
 # rGBAT24B
-This package provides tools to interface with NYC's Geosupport geocoding software from within the R programming language on Linux. You need to both install this package to your R library, and also get NYC's Geosupport software which provides the libraries this package needs for doing NYC geocoding. This package currently only works with Linux version 24B of Geosupport.
+This is a required support package for rGBATl that provides tools to interface with NYC's powerful [Geosupport](https://www.nyc.gov/site/planning/data-maps/open-data/dwn-gde-home.page) geocoding software from within the R programming language on Linux. You need to both install this package to your R library, and also get NYC's Geosupport software which provides the libraries this package needs for doing NYC geocoding.
 
+This package provides access to the 24B geosupport libraries. You need the rGBATl package for the actual tools to use those libraries in R. (See: https://github.com/torreyma/rGBATl)
 
 ## Install, the easier way:
 * You need to manually download NYC's geosupport version 24B from Bytes of the Big Apple:
     * Search for Linux version of Geosupport Desktop Edition, 24B on NYC DCP's BYTES of the BIG APPLE™ Archive page.
     * Or try this url for direct download: https://s-media.nyc.gov/agencies/dcp/assets/files/zip/data-tools/bytes/linux_geo24b_24.2.zip
 * Unzip the downloaded file (linux_geo24b_24.2.zip) in your home directory so you get a version-24b_24.2/ directory with all the Geosupport libraries in it. 
+    * Note: it's stupid, but it HAS to be in your home directory ($HOME/, ~/) and it has to have the name above or it won't work. (See hard installation section if you want to do it differently.)
     * Probably not a bad idea to run a ```chmod -r 755 version-24b_24.2``` to make all the files executable.
 * In R, make sure you have the ```devtools``` package installed. Then run ```devtools::install_github("torreyma/rGBAT24B")```
-* If it installs with no errors, you should be able to use the package to start geocoding.
-    * (TODO: fix rGBAT help)
+* If it installs with no errors, you then need to install the torreyma/rGBATl package.
 
 ## Install, the harder way:
 * If you want to put your Geosupport files anywhere other than your home directory, you need to clone this repo locally, then edit the src/Makevars file to adjust the path to point to where your Geosupport files are stashed.
