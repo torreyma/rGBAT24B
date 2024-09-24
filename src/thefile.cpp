@@ -19,7 +19,7 @@ using namespace Rcpp;
 // [[Rcpp::export]]
 DataFrame GBAT_1(DataFrame x, std::string id_col, std::string add_col, std::string third_col, std::string third_col_type = "boro_code", std::string unit_col = "") {
 
-  setenv("GEOFILES", "/home/dynohub/DOHMH-local/version-24b_24.2/fls/", 1); // Overwrite it
+  setenv("GEOFILES", "/home/dynohub/version-24b_24.2/fls/", 1); // Overwrite it
 
   std::vector<std::string> col_names (3);
   
