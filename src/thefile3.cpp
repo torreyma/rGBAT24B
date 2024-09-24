@@ -20,7 +20,7 @@ using namespace Rcpp;
 
 DataFrame GBAT_3(DataFrame x, std::string id_col, std::string street_name1, std::string street_name2, std::string boro_code1, std::string boro_code2="", std::string compass_dir="") {
 
-  setenv("GEOFILES", "/home/dynohub/version-24b_24.2/fls/", 1); // Overwrite it
+  //setenv("GEOFILES", "/home/dynohub/version-24b_24.2/fls/", 1); // Overwrite it
 
   //preparations for output data frame
   //int n_col = 4;

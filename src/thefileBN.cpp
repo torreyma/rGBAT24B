@@ -19,7 +19,7 @@ using namespace Rcpp;
 // [[Rcpp::export]]
 DataFrame GBAT_BN(DataFrame x, std::string id_col, std::string bin_col) {
 
-  setenv("GEOFILES", "/home/dynohub/version-24b_24.2/fls/", 1); // Overwrite it
+  //setenv("GEOFILES", "/home/dynohub/version-24b_24.2/fls/", 1); // Overwrite it
 
   CharacterVector id_vec = x[id_col];
   
