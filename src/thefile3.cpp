@@ -21,6 +21,12 @@ using namespace Rcpp;
 DataFrame GBAT_3(DataFrame x, std::string id_col, std::string street_name1, std::string street_name2, std::string boro_code1, std::string boro_code2="", std::string compass_dir="") {
 
   //setenv("GEOFILES", "/home/dynohub/version-24b_24.2/fls/", 1); // Overwrite it
+  // Get HOME environment variable:
+  char* home_path = getenv("HOME");
+  // concat HOME path with path to geosupport files:
+  char* geo_path = strcat (home_path, "/version-24b_24.2/fls/"); 
+  // Set GEOFILES variable 
+  setenv("GEOFILES", geo_path, 1); 
 
   //preparations for output data frame
   //int n_col = 4;

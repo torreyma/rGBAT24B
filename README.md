@@ -15,6 +15,7 @@ This package provides access to the 24B geosupport libraries. You need the rGBAT
 
 ## Install, the harder way:
 * If you want to put your Geosupport files anywhere other than your home directory, you need to clone this repo locally, then edit the src/Makevars file to adjust the path to point to where your Geosupport files are stashed. Then install locally from your cloned and modified version of the package.
+* Then you have to grep all files in src for GEOFILES and change any references to that in the .cpp files in there to point to where you downloaded your geosupport files.
 
 ## Troubleshooting
 * If you get any error about missing .so or .h files, you probably have a path problem, and it is most likely fixed by messing with the src/Makevars file. (That's not to say it will be easy.)

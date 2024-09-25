@@ -20,6 +20,12 @@ using namespace Rcpp;
 DataFrame GBAT_2(DataFrame x, std::string id_col, std::string hse_num_col, std::string add_col, std::string third_col, std::string third_col_type = "boro_code", std::string unit_col = "") {
 	
   //setenv("GEOFILES", "/home/dynohub/version-24b_24.2/fls/", 1); // Overwrite it
+  // Get HOME environment variable:
+  char* home_path = getenv("HOME");
+  // concat HOME path with path to geosupport files:
+  char* geo_path = strcat (home_path, "/version-24b_24.2/fls/"); 
+  // Set GEOFILES variable 
+  setenv("GEOFILES", geo_path, 1); 
 
   std::vector<std::string> col_names (4);
   
