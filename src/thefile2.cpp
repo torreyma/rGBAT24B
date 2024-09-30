@@ -15,6 +15,7 @@ using namespace Rcpp;
 //#include <NYCgeo.h>
 #include <pac.h>
 #include <cstring>
+#include <cstdlib>
 
 // [[Rcpp::export]]
 DataFrame GBAT_2(DataFrame x, std::string id_col, std::string hse_num_col, std::string add_col, std::string third_col, std::string third_col_type = "boro_code", std::string unit_col = "") {

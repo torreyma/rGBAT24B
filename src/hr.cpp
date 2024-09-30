@@ -14,6 +14,7 @@ using namespace Rcpp;
 #include <GMCgeo.h>
 #include <pac.h>
 #include <cstring>
+#include <cstdlib>
 
 // [[Rcpp::export]]
 std::string HR() {

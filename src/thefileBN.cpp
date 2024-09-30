@@ -15,6 +15,7 @@ using namespace Rcpp;
 //#include <NYCgeo.h>
 #include <pac.h>
 #include <cstring>
+#include <cstdlib>
 
 // [[Rcpp::export]]
 DataFrame GBAT_BN(DataFrame x, std::string id_col, std::string bin_col) {

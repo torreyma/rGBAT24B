@@ -15,6 +15,7 @@ using namespace Rcpp;
 //#include <NYCgeo.h>
 #include <pac.h>
 #include <cstring>
+#include <cstdlib>
 
 // [[Rcpp::export]]
 
