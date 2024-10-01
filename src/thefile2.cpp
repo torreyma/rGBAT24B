@@ -22,11 +22,13 @@ DataFrame GBAT_2(DataFrame x, std::string id_col, std::string hse_num_col, std::
 	
   //setenv("GEOFILES", "/home/dynohub/version-24b_24.2/fls/", 1); // Overwrite it
   // Get HOME environment variable:
-  //char* home_path = getenv("HOME");
-  // concat HOME path with path to geosupport files:
-  //char* geo_path = strcat (home_path, "/version-24b_24.2/fls/"); 
+  std::string home_path = getenv("HOME");
+  // Construct GEOFILES env variable string:
+  std::string geo_path = "GEOFILES=" + home_path + "/version-24b_24.2/fls/";
+  // convert to C-style string for putenv:
+  const char* cgeo_path = geo_path.c_str();
   // Set GEOFILES variable 
-  //setenv("GEOFILES", geo_path, 1); 
+  putenv(const_cast<char*>(cgeo_path)); // use putenv instead of setenv because it will work on msys2 on Windows
 
   std::vector<std::string> col_names (4);
   
