@@ -24,11 +24,11 @@ DataFrame GBAT_BL(DataFrame x, std::string id_col, std::string bbl_col) {
 
   //setenv("GEOFILES", "/home/dynohub/version-24b_24.2/fls/", 1); // Overwrite it
   // Get HOME environment variable:
-  char* home_path = getenv("HOME");
+  //char* home_path = getenv("HOME");
   // concat HOME path with path to geosupport files:
-  char* geo_path = strcat (home_path, "/version-24b_24.2/fls/"); 
+  //char* geo_path = strcat (home_path, "/version-24b_24.2/fls/"); 
   // Set GEOFILES variable 
-  setenv("GEOFILES", geo_path, 1); 
+  //setenv("GEOFILES", geo_path, 1); 
 
   CharacterVector id_vec = x[id_col];
   
