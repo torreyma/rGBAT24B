@@ -10,7 +10,8 @@ This package provides functions for R to access to the 24B Geosupport libraries.
 2. Unzip the downloaded file (linux_geo24b_24.2.zip) in your home directory so you get a ```version-24b_24.2/``` directory with all the Geosupport libraries in it. 
     * Note: this is stupid, but it HAS to be in your home directory ($HOME/, ~/) and it has to have the name above or it won't work. (See hard installation section if you want to do it differently.)
     * Probably not a bad idea to run a ```chmod -r 755 version-24b_24.2``` to make all the files executable.
-3. Now, in R, install the rGBATl package from github (See: https://github.com/torreyma/rGBATl). rGBATl depends on (rGBAT24B and should automatically get this package (rGBAT24B) from github and install it for you as part of the rGBATl package install process.
+3. In R, make sure you have the ```devtools``` package installed. Then run ```devtools::install_github("torreyma/rGBAT24B")```
+4. To make use of the functions this package provides, you will also need to install the rGBATl package in R from github (See: https://github.com/torreyma/rGBATl).
 
 ## Install, the harder way:
 * If you want to put your Geosupport files anywhere other than your home directory, you need to clone this repo locally, then edit the src/Makevars file to adjust the path to point to where your Geosupport files are stashed. 
