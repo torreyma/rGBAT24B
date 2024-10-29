@@ -1,5 +1,5 @@
 # rGBAT24B
-This is a required support package for rGBATl that provides tools to interface with NYC's powerful [Geosupport](https://www.nyc.gov/site/planning/data-maps/open-data/dwn-gde-home.page) geocoding software from within the R programming language on Linux. For it to work, you first need to manually download and unzip NYC's Geosupport software outside of R, which provides the libraries this package needs for doing NYC geocoding. Then you can install the rGBATl package and this rGBAT24B package, which will allow you to geocode with Geosupport in R.
+This is a required support package for [rGBATl](https://github.com/torreyma/rGBATl) that provides tools to interface with NYC's powerful [Geosupport](https://www.nyc.gov/site/planning/data-maps/open-data/dwn-gde-home.page) geocoding software from within the R programming language on Linux. For it to work, you first need to manually download and unzip NYC's Geosupport software outside of R, which provides the libraries this package needs for doing NYC geocoding. Then you can install this rGBAT24B packageand the rGBATl package, which will allow you to geocode with Geosupport in R.
 
 This package provides functions for R to access to the 24B Geosupport libraries. You need the rGBATl package for the actual tools to use those libraries in R. (See: https://github.com/torreyma/rGBATl)
 
